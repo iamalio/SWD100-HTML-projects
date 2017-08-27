@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The pattern attribute</title>
+    <style>
+        input:invalid{
+            border:2px solid red;}
+        input:valid{
+            border:2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <label for="number">Please enter a contact number</label>
+            <input id="number" name="my_number" placeholder="(###)###-####" required pattern="[(][0-9]{3}[)][0-9]{3}[-][0-9]{4}">
+            <button>Submit</button>
+        </form> 
+    </div>
+</body>
+</html>
